@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SkiFlow — Privacy Policy</title>
+  <meta name="description" content="SkiFlow privacy policy. We collect anonymous, ephemeral location data to power a real-time crowd heatmap. We never sell your data." />
+  <style>
+    :root {
+      --bg: #ffffff;
+      --fg: #1a1f2c;
+      --muted: #5a6478;
+      --accent: #1a73e8;
+      --accent-soft: #e8f0fe;
+      --border: #e5e8ed;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.65;
+      color: var(--fg);
+      background: var(--bg);
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 32px 20px 80px;
+      font-size: 16px;
+    }
+    header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 24px;
+      margin-bottom: 32px;
+    }
+    header .brand {
+      font-weight: 700;
+      font-size: 18px;
+      color: var(--accent);
+      text-decoration: none;
+    }
+    h1 { font-size: 32px; margin: 16px 0 8px; line-height: 1.25; }
+    h2 { font-size: 20px; margin: 36px 0 12px; line-height: 1.3; }
+    h3 { font-size: 16px; margin: 24px 0 8px; }
+    p { margin: 0 0 14px; }
+    ul { margin: 0 0 14px; padding-left: 24px; }
+    li { margin-bottom: 6px; }
+    a { color: var(--accent); }
+    .meta {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 4px;
+    }
+    .commitment {
+      background: var(--accent-soft);
+      border-left: 3px solid var(--accent);
+      padding: 16px 18px;
+      border-radius: 4px;
+      margin: 24px 0;
+    }
+    .commitment strong { display: block; margin-bottom: 4px; }
+    code {
+      background: #f4f6f9;
+      padding: 1px 6px;
+      border-radius: 3px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 14px;
+    }
+    footer {
+      margin-top: 64px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 14px;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f1419;
+        --fg: #e9ecf2;
+        --muted: #98a0ad;
+        --accent: #62a6ff;
+        --accent-soft: #15233a;
+        --border: #2a3140;
+      }
+      code { background: #1a2230; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <a class="brand" href="./">SkiFlow</a>
+</header>
+
+<h1>Privacy Policy</h1>
+<p class="meta"><strong>Effective Date:</strong> April 27, 2026</p>
+<p class="meta"><strong>Last Updated:</strong> April 27, 2026</p>
+
+<p>SkiFlow (“we,” “our,” or “us”) operates the SkiFlow mobile application (the “App”). This Privacy Policy explains how we collect, use, and safeguard information when you use the App.</p>
+
+<div class="commitment">
+  <strong>Our core commitments</strong>
+  We do not collect your name, email, or any information that personally identifies you. We do not sell your personal information. Your location data is never shared with ad networks or other third parties.
+</div>
+
+<h2>1. Information We Collect</h2>
+
+<h3>1.1 Location Data (with your consent)</h3>
+<p>When you opt in to location sharing, the App collects your device’s GPS coordinates while you are actively using the App at a ski resort. This data is:</p>
+<ul>
+  <li>Collected only with your explicit permission via the standard Android location permission prompt</li>
+  <li>Transmitted over encrypted HTTPS connections to our backend servers</li>
+  <li>Retained for less than 30 seconds in raw form before being aggregated and deleted</li>
+  <li>Never associated with your name, email, or any personal identifier</li>
+  <li>Never displayed individually to other users — only aggregated into 50-meter grid cells</li>
+  <li>Never shared with advertisers or ad networks (including Google AdMob)</li>
+</ul>
+<p>You can pause or stop location sharing at any time from Settings, without losing access to the App.</p>
+
+<h3>1.2 Anonymous Account Identifier</h3>
+<p>The App creates an anonymous user ID (Firebase Anonymous Authentication) on first launch. This ID is a randomly-generated string that allows your device to write location data and lift wait time reports to our backend. It is not linked to your name, email, phone number, or any personal information.</p>
+
+<h3>1.3 Advertising Identifier</h3>
+<p>The App includes Google AdMob to serve ads. AdMob collects your Android Advertising ID (AAID) — a resettable identifier provided by your Android device specifically for advertising purposes. AdMob uses this ID to:</p>
+<ul>
+  <li>Limit the number of times you see the same ad</li>
+  <li>Measure ad performance</li>
+  <li>Show you ads that may be more relevant to your interests (unless you have opted out of ads personalization in Android settings)</li>
+</ul>
+<p>You can reset your advertising ID or opt out of ads personalization at any time: <strong>Android Settings &rarr; Google &rarr; Ads &rarr; Reset advertising ID / Opt out of Ads Personalization</strong>.</p>
+<p>Information collected by AdMob is governed by <a href="https://policies.google.com/privacy">Google’s Privacy Policy</a>. We do not send AdMob your location, your Firebase anonymous ID, or any other information beyond what the AdMob SDK collects by default.</p>
+
+<h3>1.4 Crowd-Sourced Lift Wait Time Reports</h3>
+<p>When you report a lift wait time, we store the report (lift ID, estimated wait minutes, timestamp, anonymous user ID) for up to 20 minutes so it can be averaged with other recent reports. Reports expire automatically.</p>
+
+<h3>1.5 Crash Reports and Diagnostics</h3>
+<p>We use Firebase Crashlytics to collect anonymous crash logs and performance diagnostics. No personal information is included in these reports.</p>
+
+<h3>1.6 Device and Technical Information</h3>
+<p>We may collect non-identifying device information such as device model, Android OS version, App version, and language settings for compatibility and debugging.</p>
+
+<h2>2. What We Do NOT Collect</h2>
+<ul>
+  <li>Your name, email address, phone number, or physical address</li>
+  <li>Your date of birth</li>
+  <li>Your contacts</li>
+  <li>Your photos, videos, or files</li>
+  <li>Your browsing history or other installed apps</li>
+  <li>Payment or financial information</li>
+  <li>Health or fitness data</li>
+</ul>
+
+<h2>3. How We Use Your Information</h2>
+<p>Collected information is used to:</p>
+<ul>
+  <li>Generate the real-time crowd heatmap (location)</li>
+  <li>Calculate average lift wait times (lift reports)</li>
+  <li>Create anonymized historical heatmap snapshots (aggregate location)</li>
+  <li>Diagnose crashes and improve performance (crash logs)</li>
+  <li>Prevent spam lift reports from a single device (Firebase anonymous ID)</li>
+  <li>Serve ads via Google AdMob (advertising ID)</li>
+</ul>
+
+<h2>4. How We Share Your Information</h2>
+<p><strong>We do not sell your personal information.</strong> We do not share your individual location data with other users, advertisers, data brokers, or any third party.</p>
+<p>We use the following service providers:</p>
+
+<h3>4.1 Google Firebase (backend)</h3>
+<p>We use Firebase Realtime Database, Firestore, Authentication, Cloud Functions, and Crashlytics. Firebase processes the following on our behalf: anonymous user ID, aggregate location grid cells, lift wait reports, crash logs. <a href="https://policies.google.com/privacy">Google’s privacy policy</a>.</p>
+
+<h3>4.2 Google AdMob (advertising)</h3>
+<p>We use Google AdMob to display ads within the App. AdMob is provided by Google LLC. AdMob collects your advertising ID, device type, approximate IP-based location (country/region), and basic ad-interaction data (impressions, clicks) to serve and measure ads.</p>
+<p>We have configured AdMob as follows:</p>
+<ul>
+  <li>We do <strong>not</strong> share your precise GPS location with AdMob.</li>
+  <li>We do <strong>not</strong> share your Firebase anonymous ID with AdMob.</li>
+  <li>AdMob operates under its own privacy practices, described <a href="https://policies.google.com/technologies/ads">here</a>.</li>
+</ul>
+
+<h3>4.3 Google Maps Platform</h3>
+<p>We use Google Maps to display map tiles and the ski resort overlay. Map usage is subject to <a href="https://maps.google.com/help/terms_maps/">Google’s Maps terms</a>.</p>
+
+<h3>4.4 Legal Disclosure</h3>
+<p>We may disclose information if legally required by subpoena, court order, or similar legal process, or to protect our rights or user safety.</p>
+
+<h2>5. Consent for Personalized Ads (EU, UK, Switzerland)</h2>
+<p>If you are located in the European Economic Area, the United Kingdom, or Switzerland, you will be shown a consent form on first launch (via Google’s User Messaging Platform) asking whether you want personalized ads, non-personalized ads, or to withdraw consent. You can change your choice at any time from Settings &rarr; Ads Consent.</p>
+<ul>
+  <li><strong>Personalized ads:</strong> AdMob uses your advertising ID to show ads that may be more relevant.</li>
+  <li><strong>Non-personalized ads:</strong> AdMob shows contextual ads not tied to your advertising ID.</li>
+</ul>
+
+<h2>6. Data Retention</h2>
+<ul>
+  <li><strong>Raw GPS coordinates:</strong> Deleted within 30 seconds of receipt</li>
+  <li><strong>Aggregate heatmap snapshots:</strong> Retained for 90 days (contain no individual positions)</li>
+  <li><strong>Lift wait time reports:</strong> Retained for 20 minutes</li>
+  <li><strong>Anonymous user ID:</strong> Retained until you delete your account</li>
+  <li><strong>Crash reports:</strong> Up to 90 days (Firebase Crashlytics)</li>
+  <li><strong>AdMob advertising data:</strong> Retained by Google per their retention policy</li>
+</ul>
+
+<h2>7. Your Rights and Choices</h2>
+<p>You can:</p>
+<ul>
+  <li>Stop location sharing at any time from Settings without deleting your account</li>
+  <li>Revoke location permission via Android system settings</li>
+  <li>Reset your advertising ID (Android Settings &rarr; Google &rarr; Ads)</li>
+  <li>Opt out of personalized ads (Android Settings &rarr; Google &rarr; Ads)</li>
+  <li>Change your EU/UK/CH ad consent (App Settings &rarr; Ads Consent)</li>
+  <li>Delete your anonymous account and associated data from in-app Settings</li>
+  <li>Request data deletion by email (processed within 7 days)</li>
+</ul>
+
+<h3>California Residents (CCPA / CPRA)</h3>
+<p>California residents have the right to know, delete, and opt out of the “sale” or “sharing” of personal information. Under California law, the use of advertising identifiers for cross-context behavioral advertising may be considered “sharing.”</p>
+<p><strong>To opt out of sharing for cross-context behavioral advertising:</strong></p>
+<ul>
+  <li>Go to App Settings &rarr; Ads &amp; Privacy &rarr; “Do Not Sell or Share My Personal Information”</li>
+  <li>Or enable Android’s “Opt out of Ads Personalization”</li>
+  <li>Or email the address listed at the bottom of this page</li>
+</ul>
+
+<h3>EU/UK Residents (GDPR / UK GDPR)</h3>
+<p>EU and UK residents have the rights of access, rectification, erasure, restriction, portability, and objection. Our legal basis for processing is your consent (location sharing, personalized ads) and our legitimate interest (App functionality and security).</p>
+<p>Email the address listed at the bottom of this page to exercise these rights. You also have the right to lodge a complaint with a supervisory authority.</p>
+
+<h2>8. Children’s Privacy</h2>
+<p>SkiFlow is not directed at children under 13. We do not knowingly collect information from children under 13. Our ad configuration includes <code>setTagForChildDirectedTreatment(FALSE)</code> because we do not direct the App at children, but we also prevent targeting users we know to be under 13. If you believe a child under 13 has used the App, contact us at the email below.</p>
+
+<h2>9. International Data Transfers</h2>
+<p>Your data may be processed on servers located in the United States. If you access the App from outside the United States, you consent to the transfer of data to the United States.</p>
+
+<h2>10. Security</h2>
+<p>We use TLS encryption in transit, Firebase Authentication for access control, and strict Firebase security rules that prevent users from reading each other’s raw location data. No system is perfectly secure, but we minimize risk by retaining raw location data for less than 30 seconds.</p>
+
+<h2>11. Changes to This Policy</h2>
+<p>We may update this Privacy Policy from time to time. Material changes will be announced in the App and via the “Last Updated” date above. Continued use constitutes acceptance.</p>
+
+<h2>12. Contact Us</h2>
+<p><strong>Email:</strong> <a href="mailto:wingfieldbrett@gmail.com">wingfieldbrett@gmail.com</a></p>
+<p>Brett Wingfield, SkiFlow</p>
+
+<footer>
+  &copy; 2026 SkiFlow. Privacy questions? Email <a href="mailto:wingfieldbrett@gmail.com">wingfieldbrett@gmail.com</a>.
+</footer>
+
+</body>
+</html>
